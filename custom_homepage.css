@@ -1,0 +1,50 @@
+.custom-navbar {
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+.custom-body-color {
+    background-color: black;
+}
+
+.nav-item {
+    padding: 12px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #da1f26;
+    font-weight: 600;
+}
+
+.category-heading {
+    color: white;
+    font-weight: bold;
+}
+
+.category-view-row {
+    background-color: transparent;
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.category-view-col {
+    display: inline-block;
+}
+
+.category-view-row::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    height: 200px;
+    width: 350px;
+}
