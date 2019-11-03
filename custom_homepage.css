@@ -28,7 +28,7 @@
 
 .category-view-row {
     background-color: transparent;
-    height: 200px;
+    height: 300px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -45,8 +45,8 @@
 }
 
 img {
-    height: 200px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
 .vid-bg{
     margin-left: 0px;
@@ -95,7 +95,6 @@ footer{
 
 @media (max-height:900px){
     footer { position: static; }
-    header { padding-top:40px; }
 }
 
 
