@@ -26,6 +26,11 @@
     font-weight: bold;
 }
 
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Nosifer', cursive;
+}
+
 .category-view-row {
     background-color: transparent;
     height: 300px;
@@ -76,7 +81,9 @@ img {
     padding:0;
     margin:0;
 }
-
+.navbar-brand{
+    font-size: 61px;
+}
 
 
 
@@ -266,4 +273,9 @@ footer{
         margin-left: 0;
     }
 
+}
+.navbar-brand{
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 0;
 }
