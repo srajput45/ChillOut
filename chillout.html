@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <title>login page</title>
     <style>
-        .bg-modal button{
+        .bg-modal button {
             border-radius: 15px;
         }
-        h3{
+        
+        h3 {
             font-family: sans-serif;
             font-size: 30px;
             font-style: bold;
         }
-        h6{
+        
+        h6 {
             margin: 5px;
         }
-        form input{ 
+        
+        form input {
             border: none;
             border-bottom: 2px solid black;
             width: 50%;
@@ -30,9 +34,9 @@
             height: 40px;
             font-size: 16px;
             font-family: sans-serif;
-
         }
-        .bg-modal{
+        
+        .bg-modal {
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
@@ -40,9 +44,10 @@
             top: 0;
             display: none;
             justify-content: center;
-            align-items: center;            
+            align-items: center;
         }
-        .modal-content{
+        
+        .modal-content {
             width: 500px;
             height: 300px;
             background-color: #d81f26;
@@ -51,7 +56,8 @@
             text-align: center;
             padding: 20px;
         }
-        .close{
+        
+        .close {
             position: absolute;
             top: 0;
             right: 14px;
@@ -59,43 +65,42 @@
             transform: rotate(45deg);
             cursor: pointer;
         }
-        ::placeholder{
-            color: white;
+        
+         ::placeholder {
+            color: black;
             font-family: sans-serif;
         }
+        
         body,
         html {
             height: 100%;
         }
-
+        
         .hero-image {
             /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sherlock.jpg");
-
             /* Set a specific height */
             height: 100%;
-
             /* Position and center the image to scale nicely on all screens */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
         }
-
+        
         .chillout_text {
             color: #d81f26;
-
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold
         }
-
+        
         .signupbtn {
             background-color: #d81f26;
             color: white;
             border: none;
             font-family: cursive
         }
-
+        
         .hero-text {
             position: absolute;
             top: 50%;
@@ -103,7 +108,6 @@
             transform: translate(-60%, -50%);
             color: white;
         }
-        
     </style>
 
 </head>
@@ -124,26 +128,24 @@
             <br>
             <br>
             <button type="button" id="button" class="signupbtn"> start your free trial</button>
-        </div>   
+        </div>
     </div>
     <div class="bg-modal">
         <div class="modal-content">
             <div class="close">+</div>
-                <h3>Sign Up</h3>
-                <form>
-                    <input type="text" placeholder="User Name">
-                    <input type="password" placeholder="Password">
-                    <button type="submit" id="Signup">SingUp</button>
-                    <h6>OR</h6>
-                    <button type="button" id="google">SignUp with Google+</button>
-                </form>
+            <h3>Register</h3>
+            <form>
+                <input type="text" placeholder="Name" style="color: white;">
+                <input type="date" placeholder="DOB">
+                <a href="Home_Page.html" style="padding-top: 40px;"><i style="color: black;" class="fa fa-arrow-right fa-2x"></i></a>
+            </form>
         </div>
     </div>
     <script>
-       document.getElementById("button").addEventListener('click',function(){
+        document.getElementById("button").addEventListener('click', function() {
             document.querySelector('.bg-modal').style.display = 'flex';
         });
-        document.querySelector('.close').addEventListener('click',function(){
+        document.querySelector('.close').addEventListener('click', function() {
             document.querySelector('.bg-modal').style.display = 'none';
         });
     </script>
